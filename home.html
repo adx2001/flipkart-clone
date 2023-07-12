@@ -29,10 +29,24 @@
                     </form>
                 </li>
                 <li class="nav-item mx-3 p-1">
-                    <a class="btn btn-light text-primary btn-sm px-5 rounded-0" type="button"><b>Login</b></a>
+                    <div class="dropdown-center">
+                        <button class="btn btn-light text-primary btn-sm px-5 rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Login
+                        </button>
+                        <ul class="dropdown-menu">
+                          <div class="list-group list-group-flush text-center">
+                            <a href="#loginmodal" class="list-group-item list-group-item-action text-center" data-bs-toggle="modal" data-bs-target="#loginmodal">New Customer? <b class="text-primary">Sign Up!</b>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action"><img src="https://img.freepik.com/free-icon/user_318-749758.jpg"width="24" height="24">My Profile</a>
+                            <a href="#" class="list-group-item list-group-item-action">Orders</a>
+                            <a href="#" class="list-group-item list-group-item-action">Wishlist</a>
+                            <a href="#" class="list-group-item list-group-item-action">Rewards</a>
+                          </div>
+                        </ul>
+                      </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Become a Seller</a>
+                    <a class="nav-link text-light" href="seller.html">Become a Seller</a>
                 </li>
                 <li class="nav-item dropdown mx-4">
                     <a class="nav-link dropdown-toggle  text-light" href="#" role="button" data-bs-toggle="dropdown">
@@ -58,23 +72,54 @@
         </div>
     </nav><br><br>
 
-    <!-- options section -->
+    <!-- Button trigger modal -->
 
-    <div class="container-fluid mt-1 bg-white border border-bottom-5  px-2 ">
-        <div class="row p-2 text-center">
-          <div class="col">
-            <div class="image-with-link">
-              <img src="https://rukminim2.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" class="img-fluid" alt="Image 1" width="64px" height="64px">
-              <a href="link1.html" style="text-decoration: none;" class="text-dark">Grocery</a>
+      <!-- Modal -->
+      <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-          </div>
-          
-          <div class="col">
-            <div class="image-with-link">
-                <img src="https://rukminim2.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" class="img-fluid" alt="Image 1" width="64px" height="64px">
-                <a href="link1.html" style="text-decoration: none;" class="text-dark">Mobiles</a>
+            <div class="modal-body">
+              <div class="register-photo"style="background-image: url(images/Screenshot\ 2023-07-13\ 010618.png);background-size: cover; display: table-cell; width: auto;"  >
+                <div class="form-container">
+                    <div class="image-holder" ></div>
+                    <form method="post">
+                        <h2 class="text-center"><strong>Create</strong> an account.</h2>
+                        <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+                        <div class="form-group"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
+                        <div class="form-group">
+                            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
+                        </div>
+                        <div class="form-group"><button class="btn btn-success btn-block" type="submit">Sign Up</button></div><a class="already" href="#">You already have an account? Login here.</a></form>
+                </div>
             </div>
+
+            </div>
+           
           </div>
+        </div>
+      </div>
+
+          <!-- options section -->
+
+          <div class="container-fluid mt-1 bg-white border border-bottom-5  px-2 ">
+              <div class="row p-2 text-center">
+                <div class="col">
+                  <div class="image-with-link">
+                    <img src="https://rukminim2.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" class="img-fluid" alt="Image 1" width="64px" height="64px">
+                    <a href="link1.html" style="text-decoration: none;" class="text-dark">Grocery</a>
+                  </div>
+                </div>
+                
+                <div class="col">
+                  <div class="image-with-link">
+                      <img src="https://rukminim2.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" class="img-fluid" alt="Image 1" width="64px" height="64px">
+                      <a href="link1.html" style="text-decoration: none;" class="text-dark">Mobiles</a>
+                  </div>
+                </div>
 
           <div class="col">
             <div class="image-with-link">
@@ -190,7 +235,7 @@
       <!-- Carousel main -->
       
 
-      <div id="carouselExampleAutoplaying " class="carousel slide mt-2 container-fluid" data-bs-ride="carousel">
+      <div id="cm" class="carousel slide mt-2 container-fluid" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/72c5079e92bbf325.png?q=50" class="d-block w-100" alt="...">
@@ -202,15 +247,115 @@
             <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d6c2c00726dda91d.png?q=50" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#cm" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#cm" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <!-- electronics carousel container -->
+
+      <div class="container-fluid mt-3">
+        <div class="row d-flex">
+            <div class="col-10">
+                <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                       <div class="card-group text-center ">
+                        <div class="card">
+                         <img src="https://rukminim2.flixcart.com/image/400/400/khuvxjk0/dslr-camera/c/g/s/x-s10-x-s10-fujifilm-original-imafxsdjfh7cyexv.jpeg?q=70" class="card-img-top img-fluid mx-auto"  style="height: 50%; width: 80%;">
+                         <div class="card-body ">
+                         <h5 class="card-title">Top Mirrorless Cameras</h5>
+                         <p class="card-text">Show Now!</p>
+                         <p class="card-text"><small class="text-muted">Sony,Canon......</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://rukminim2.flixcart.com/image/800/800/xif0q/power-bank/d/a/f/-original-imagky3e8yp5ebvr.jpeg?q=70" class="card-img-top img-fluid mx-auto" style="height: 50%; width: 80%;">
+                      <div class="card-body">
+                        <h5 class="card-title">Premium Powerbanks</h5>
+                        <p class="card-text">Shop Now!</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://rukminim2.flixcart.com/flap/400/400/image/20c224cd52ae7a87.jpg?q=70" class="card-img-top img-fluid mx-auto" style="height: 50%; width: 80%;">
+                      <div class="card-body">
+                        <h5 class="card-title">Best of Trimmers</h5>
+                        <p class="card-text">Shop Now!</p>MI,Realme......</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://rukminim2.flixcart.com/image/400/400/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=70" class="card-img-top img-fluid mx-auto"  style="height: 50%; width: 80%;">
+                        <div class="card-body">
+                        <h5 class="card-title">Projectors</h5>
+                        <p class="card-text">Shop Now!</p>
+                        <p class="card-text"><small class="text-muted">Zebronics.....</small></p>
+                     </div>
+                   </div>
+                  </div>
+                  
+                      </div>
+                  <div class="carousel-item">
+                  <div class="card-group text-center">
+                    <div class="card">
+                      <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/printer/g/a/v/dcp-t820dw-wi-fi-auto-duplex-color-ink-brother-original-imagz9ehvxpywvsd.jpeg?q=70 " class="card-img-top img-fluid mx-auto" style="height: 50%; width: 80%;">
+                      <div class="card-body">
+                        <h5 class="card-title">Printers</h5>
+                        <p class="card-text">Shop Now!</p>
+                        <p class="card-text"><small class="text-muted">Brother</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://rukminim2.flixcart.com/image/400/400/l41n2q80/monitor/2/j/f/ex2710q-quad-hd-27-ex2710q-benq-original-imagffa7nxsah82y.jpeg?q=70" class="card-img-top img-fluid mx-auto" style="height: 50%; width: 80%;">
+                      <div class="card-body">
+                        <h5 class="card-title">BenQ Monitors</h5>
+                        <p class="card-text">Shop Now!</p>
+                        <p class="card-text"><small class="text-muted">Top Rated</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://rukminim2.flixcart.com/image/400/400/kb89ea80/printer/g/q/2/canon-ts307-direct-wifi-original-imafsmk9yu57jagn.jpeg?q=70" class="card-img-top img-fluid mx-auto" style="height: 50%; width: 80%;">
+                      <div class="card-body">
+                        <h5 class="card-title">Printers</h5>
+                        <p class="card-text">Shop Now!</p>
+                        <p class="card-text"><small class="text-muted">Canon</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://rukminim2.flixcart.com/image/400/400/l4oi4cw0/monitor/w/e/n/-original-imagfj56dzgbfmhn.jpeg?q=70" class="card-img-top img-fluid mx-auto"  style="height: 50%; width: 80%;"  >
+                        <div class="card-body">
+                        <h5 class="card-title">Monitors</h5>
+                        <p class="card-text">Shop Now!</p>
+                        <p class="card-text"><small class="text-muted">Dell</small></p>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="col-2">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/464/708/image/cb34acb8965c0c5e.jpg?q=70" class="img-fluid h-100">
+            </div>
+        </div>
+      </div>
+
+      
+
 
 
       
