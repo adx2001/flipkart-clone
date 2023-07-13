@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
     <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css” />
+    <link rel="icon" type="images/x-icon" href="images/1220366_flipkart_icon.png">
     <title>Flipkart</title>
 </head>
 <body class="bg-light">
@@ -35,9 +36,9 @@
                         </button>
                         <ul class="dropdown-menu">
                           <div class="list-group list-group-flush text-center">
-                            <a href="#loginmodal" class="list-group-item list-group-item-action text-center" data-bs-toggle="modal" data-bs-target="#loginmodal">New Customer? <b class="text-primary">Sign Up!</b>
+                            <a href="#loginmodal" class="list-group-item list-group-item-action text-center" data-bs-toggle="modal" data-bs-target="#login1">New Customer? <b class="text-primary">Sign Up!</b>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action">
+                            <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#login2">
                               <img class="" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg" alt="My Profile" width="24" height="24">My Profile</a>
                               <a href="#" class="list-group-item list-group-item-action">
                                 <img class="SFnind" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkplus-4ff29a.svg" alt="Flipkart Plus Zone" width="24" height="24">Flipkart Plus   </a>
@@ -77,7 +78,65 @@
 
     <!-- Button trigger modal -->
 
-      <!-- Modal  -->
+    <div class="modal" id="login1">
+      <div class="modal-dialog modal-lg ">
+          <div class="modal-content">
+              <div class="modal-body bg-primary text-white">
+                  <div class="container-fluid h-100">
+                      <div class="row">
+                          <div class="col-5 text-start">
+                              <h3 class="modal-title p-3 ">Looks like you're new here!</h3>
+                              <h6 class="modal-title p-3 me-5">Sign up with your mobile number to get started</h6>
+                              <img src="images/loginform-removebg-preview.png" alt="" style="height: 200px; width: 300px;" class="p-5 mt-5">
+                          </div>
+                          <div class="col bg-light">
+                              <form action="">
+                                  <div class="row p-5">
+                                      <input type="text" placeholder="Enter Mobile Number" class="form-control mb-2"></input>
+                                      <p><small class="text-black">By continuing, you agree to my's Terms of Use and Privacy Policy.</small></p>
+                                      <button class="btn btn-warning mb-3 shadow-lg btn-lg"><small>CONTINUE</small></button>
+                                      <button class="btn btn-light shadow-lg btn-lg"><a href="" class="text-decoration-none"><small>Existing user? Login</small></a></button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="login2">
+      <div class="modal-dialog modal-lg ">
+          <div class="modal-content">
+              <div class="modal-body bg-primary text-white">
+                  <div class="container-fluid h-100">
+                      <div class="row">
+                          <div class="col-5 text-start">
+                              <h3 class="modal-title p-3 ">Login</Prog></h3>
+                              <h6 class="modal-title p-3 me-5">Get access to your Orders, Wishlist and Recommendations</h6>
+                              <img src="images/loginform-removebg-preview.png" alt="" style="height: 200px; width: 300px;" class="p-5 mt-5">
+                          </div>
+                          <div class="col bg-light">
+                              <form action="">
+                                  <div class="row p-5">
+                                      <input type="text" placeholder="Enter Email/Mobile number" class="form-control mb-2"></input>
+                                      <p><small class="text-black">By continuing, you agree to my's Terms of Use and Privacy Policy.</small></p>
+                                      <button class="btn btn-warning mb-3 shadow-lg btn-lg rounded-0"><small>Request OTP</small></button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+      
 
           <!-- options section -->
 
@@ -246,7 +305,7 @@
                          <img src="https://rukminim2.flixcart.com/image/400/400/khuvxjk0/dslr-camera/c/g/s/x-s10-x-s10-fujifilm-original-imafxsdjfh7cyexv.jpeg?q=70" class="card-img-top img-fluid mx-auto"  style="height: 40%; width: 70%;">
                          <div class="card-body ">
                          <h5 class="card-title">Top Mirrorless Cameras</h5>
-                         <p class="card-text">Show Now!</p>
+                         <a href="#" class="card-text text-decoration-none">Show Now!</a>
                          <p class="card-text"><small class="text-muted">Sony,Canon......</small></p>
                       </div>
                     </div>
@@ -254,7 +313,7 @@
                       <img src="https://rukminim2.flixcart.com/image/800/800/xif0q/power-bank/d/a/f/-original-imagky3e8yp5ebvr.jpeg?q=70" class="card-img-top img-fluid mx-auto" style="height: 40%; width: 70%;">
                       <div class="card-body">
                         <h5 class="card-title">Premium Powerbanks</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Ambrane,MI....</small></p>
                       </div>
                     </div>
@@ -262,7 +321,7 @@
                       <img src="https://rukminim2.flixcart.com/flap/400/400/image/20c224cd52ae7a87.jpg?q=70" class="card-img-top img-fluid mx-auto" style="height: 40%; width: 70%;">
                       <div class="card-body">
                         <h5 class="card-title">Best of Trimmers</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Realme,MI......</small></p>
                       </div>
                     </div>
@@ -270,7 +329,7 @@
                         <img src="https://rukminim2.flixcart.com/image/400/400/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=70" class="card-img-top img-fluid mx-auto"  style="height: 40%; width: 70%;">
                         <div class="card-body">
                         <h5 class="card-title">Projectors</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Zebronics.....</small></p>
                      </div>
                    </div>
@@ -283,7 +342,7 @@
                       <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/printer/g/a/v/dcp-t820dw-wi-fi-auto-duplex-color-ink-brother-original-imagz9ehvxpywvsd.jpeg?q=70 " class="card-img-top img-fluid mx-auto" style="height: 40%; width: 70%;">
                       <div class="card-body">
                         <h5 class="card-title">Printers</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Brother</small></p>
                       </div>
                     </div>
@@ -291,7 +350,7 @@
                       <img src="https://rukminim2.flixcart.com/image/400/400/l41n2q80/monitor/2/j/f/ex2710q-quad-hd-27-ex2710q-benq-original-imagffa7nxsah82y.jpeg?q=70" class="card-img-top img-fluid mx-auto" style="height: 40%; width: 70%;">
                       <div class="card-body">
                         <h5 class="card-title">BenQ Monitors</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Top Rated</small></p>
                       </div>
                     </div>
@@ -299,7 +358,7 @@
                       <img src="https://rukminim2.flixcart.com/image/400/400/kb89ea80/printer/g/q/2/canon-ts307-direct-wifi-original-imafsmk9yu57jagn.jpeg?q=70" class="card-img-top img-fluid mx-auto" style="height: 40%; width: 70%;">
                       <div class="card-body">
                         <h5 class="card-title">Printers</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Canon</small></p>
                       </div>
                     </div>
@@ -307,7 +366,7 @@
                         <img src="https://rukminim2.flixcart.com/image/400/400/l4oi4cw0/monitor/w/e/n/-original-imagfj56dzgbfmhn.jpeg?q=70" class="card-img-top img-fluid mx-auto"  style="height: 40%; width: 70%;"  >
                         <div class="card-body">
                         <h5 class="card-title">Monitors</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Dell</small></p>
                      </div>
                    </div>
@@ -315,11 +374,11 @@
                 </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon  bg-secondary" aria-hidden="true" ></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
@@ -348,7 +407,7 @@
                          <img src="https://rukminim2.flixcart.com/image/400/400/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70" class="card-img-top img-fluid mx-auto"  style="height: 40%; width: 70%;">
                          <div class="card-body ">
                          <h5 class="card-title">Electrics cycles</h5>
-                         <p class="card-text">Show Now!</p>
+                         <a href="#" class="card-text text-decoration-none">Show Now!</a>
                          <p class="card-text"><small class="text-muted">Nuze,Motolov...</small></p>
                       </div>
                     </div>
@@ -356,7 +415,7 @@
                       <img src="https://rukminim2.flixcart.com/image/400/400/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=70" class="card-img-top img-fluid mx-auto" style="height: 40%; width: 70%;">
                       <div class="card-body">
                         <h5 class="card-title">Tricycles & Rideons</h5>
-                        <p class="card-text">Up to 70% Off</p>
+                        <a href="#" class="card-text text-decoration-none">Up to 70% Off</a>
                         <p class="card-text"><small class="text-muted">Battle Toy & More</small></p>
                       </div>
                     </div>
@@ -364,7 +423,7 @@
                       <img src="https://rukminim2.flixcart.com/image/400/400/l51d30w0/shopsy-sport-mat/p/w/s/anadi-01-yoga-mat-4-30-anadi-enterprise-15-original-imagfsxudxcm7r48.jpeg?q=70" class="card-img-top img-fluid mx-auto" style="height: 40%; width: 70%;">
                       <div class="card-body">
                         <h5 class="card-title">Yoga Mat</h5>
-                        <p class="card-text">Shop Mow!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Mow!</a>
                         <p class="card-text"><small class="text-muted"> beatXP,HRX...</small></p>
                       </div>
                     </div>
@@ -372,7 +431,7 @@
                         <img src="https://rukminim2.flixcart.com/image/400/400/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=70" class="card-img-top img-fluid mx-auto"  style="height: 40%; width: 70%;">
                         <div class="card-body">
                         <h5 class="card-title">Top Stationary Products</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Pens,Notebooks...</small></p>
                      </div>
                    </div>
@@ -385,7 +444,7 @@
                       <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/printer/g/a/v/dcp-t820dw-wi-fi-auto-duplex-color-ink-brother-original-imagz9ehvxpywvsd.jpeg?q=70 " class="card-img-top img-fluid mx-auto" style="height: 40%; width: 70%;">
                       <div class="card-body">
                         <h5 class="card-title">Printers</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Brother</small></p>
                       </div>
                     </div> 
@@ -393,7 +452,7 @@
                       <img src="https://rukminim2.flixcart.com/image/400/400/l41n2q80/monitor/2/j/f/ex2710q-quad-hd-27-ex2710q-benq-original-imagffa7nxsah82y.jpeg?q=70" class="card-img-top img-fluid mx-auto" style="height: 40%; width: 70%;">
                       <div class="card-body">
                         <h5 class="card-title">BenQ Monitors</h5>
-                        <p class="card-text">Shop Now!</p>
+                        < a href="#" class="card-text text-decoration-none">Shop Now!</>
                         <p class="card-text"><small class="text-muted">Top Rated</small></p>
                       </div>
                     </div>
@@ -401,7 +460,7 @@
                       <img src="https://rukminim2.flixcart.com/image/400/400/kb89ea80/printer/g/q/2/canon-ts307-direct-wifi-original-imafsmk9yu57jagn.jpeg?q=70" class="card-img-top img-fluid mx-auto" style="height: 40%; width: 70%;">
                       <div class="card-body">
                         <h5 class="card-title">Printers</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Canon</small></p>
                       </div>
                     </div>
@@ -409,7 +468,7 @@
                         <img src="https://rukminim2.flixcart.com/image/400/400/l4oi4cw0/monitor/w/e/n/-original-imagfj56dzgbfmhn.jpeg?q=70" class="card-img-top img-fluid mx-auto"  style="height: 40%; width: 70%;"  >
                         <div class="card-body">
                         <h5 class="card-title">Monitors</h5>
-                        <p class="card-text">Shop Now!</p>
+                        <a href="#" class="card-text text-decoration-none">Shop Now!</a>
                         <p class="card-text"><small class="text-muted">Dell</small></p>
                      </div>
                    </div>
@@ -417,11 +476,11 @@
                 </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
@@ -458,13 +517,13 @@
           </div>
 
           <!-- footer section -->
-          <footer class=" text-center text-lg-start" style="background-color:#172337">
+          <footer class=" text-center text-lg-start" style="background-color:#172337;" >
             <!-- Grid container -->
-            <div class="container-fluid me-4 p-3 ">
+            <div class="container-fluid me-4 p-2">
               <!--Grid row-->
               <div class="row">
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-2 mb-4 mb-md-0 fw-light">
+                <div class="col-sm-2   fw-light">
                   <p class="text-secondary">Home</p>
           
                   <ul class="list-unstyled mb-0">
@@ -491,7 +550,7 @@
                 <!--Grid column-->
           
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-2 mb-4 mb-md-0 fw-light">
+                <div class="col-sm-2    fw-light">
                   <p class="text-secondary">Help</p>
           
                   <ul class="list-unstyled">
@@ -515,7 +574,7 @@
                 <!--Grid column-->
           
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-2 mb-4 mb-md-0 fw-light">
+                <div class="col-sm-2    fw-light">
                   <p class="text-secondary">Consumer Policy</p>
           
                   <ul class="list-unstyled mb-0">
@@ -542,7 +601,7 @@
                 <!--Grid column-->
           
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-2 mb-4 mb-md-0 fw-light">
+                <div class="col-sm-2  mb-2  fw-light">
                   <p class="text-secondary">Social</p>
           
                   <ul class="list-unstyled">
@@ -558,7 +617,7 @@
                   </ul>
                 </div>
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-2 mb-4 mb-md-0 fw-light">
+                <div class="col-sm-2    fw-light">
                   <p class="text-secondary">Mail Us:</p>
           
                   <ul class="list-unstyled">
@@ -578,7 +637,7 @@
                   </ul>
                 </div>
 
-                <div class="col-lg-2 col-md-2 mb-4 mb-md-0 fw-light">
+                <div class="col-sm-2    fw-light">
                   <p class="text-secondary">Registered Office Address:</p>
           
                   <ul class="list-unstyled">
@@ -607,9 +666,16 @@
             <!-- Grid container -->
           
             <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2020 Copyright:
-              <a class="text-white text-decoration-none" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <div class="text-center ">
+              <a class="text-white text-decoration-none px-3" href="seller.html"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K" height="10px" width="20px">Become a Seller</a>
+              <a class="text-white text-decoration-none px-3" href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0zLTNoMjB2MjBILTN6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuNDkyIDNDNi4zNTMgMyAzIDYuMzYgMyAxMC41YzAgNC4xNCAzLjM1MyA3LjUgNy40OTIgNy41QzE0LjY0IDE4IDE4IDE0LjY0IDE4IDEwLjUgMTggNi4zNiAxNC42NCAzIDEwLjQ5MiAzem0zLjE4IDEyTDEwLjUgMTMuMDg4IDcuMzI3IDE1bC44NC0zLjYwN0w1LjM3IDguOTdsMy42OS0uMzE1TDEwLjUgNS4yNWwxLjQ0IDMuMzk4IDMuNjkuMzE1LTIuNzk4IDIuNDIyLjg0IDMuNjE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" height="15px" width="15px">Advertise</a>
+              <a class="text-white text-decoration-none px-3" href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg==" height="15px" width="15px">Gift Cards</a>
+              <a class="text-white text-decoration-none px-3" href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" height="15px" width="15px">Help Center</a>
+              <a class="text-white text-decoration-none px-3" href="">© 2007-2023 Flipkart.com</a>
+              <a class="text-white text-decoration-none px-3" href="">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" height="30px" width="380px">
+               
+              </a>
             </div>
             <!-- Copyright -->
           </footer>
