@@ -16,7 +16,7 @@
     
     <nav class="navbar navbar-expand-lg bg-primary fixed-top">
         <div class="container mx-auto">
-            <a class="ms-auto" href="#">
+            <a class="ms-auto" href="home.html">
                 <img width="75" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png">
             </a>
             <ul class="navbar-nav me-auto px-3">
@@ -91,9 +91,9 @@
               <small >Login to see the items you added previously</small>
               <br>
               <br>
-              <button type="button" class="btn text-light px-4 rounded-0" style="background-color: #fb641b;"
+              <button type="button" class="btn text-light px-4 rounded-0" data-bs-toggle="modal" data-bs-target="#login2" style="background-color: #fb641b;"
              >
-        Custom button
+        Login
       </button>
               <div class="p-4"></div>
           </div>
@@ -101,6 +101,33 @@
       
         </div>
         <br>
+
+        <div class="modal" id="login2">
+          <div class="modal-dialog modal-lg ">
+              <div class="modal-content">
+                  <div class="modal-body bg-primary text-white">
+                      <div class="container-fluid h-100">
+                          <div class="row">
+                              <div class="col-5 text-start">
+                                  <h3 class="modal-title p-3 ">Login</Prog></h3>
+                                  <h6 class="modal-title p-3 me-5">Get access to your Orders, Wishlist and Recommendations</h6>
+                                  <img src="images/loginform-removebg-preview.png" alt="" style="height: 200px; width: 300px;" class="p-5 mt-5">
+                              </div>
+                              <div class="col bg-light">
+                                  <form action="">
+                                      <div class="row p-5">
+                                          <input type="text" placeholder="Enter Email/Mobile number" class="form-control mb-2"></input>
+                                          <p><small class="text-black">By continuing, you agree to my's Terms of Use and Privacy Policy.</small></p>
+                                          <button class="btn btn-warning mb-3 shadow-lg btn-lg rounded-0"><small>Request OTP</small></button>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
       
         <footer class="text-center text-secondary" style="background-color: #f1f1f1;">
             <!-- Grid container -->
